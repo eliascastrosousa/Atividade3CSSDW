@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css">
+    <title>Festivais</title>
+    <link rel="icon" href="imagens/mala.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <ul>
+            <a href="#top">
+                <li>Home</li>
+            </a>
+            <a href="#loj">
+                <li>Lojas</li>
+            </a>
+            <a href="#bus">
+                <li>Buscar</li>
+            </a>
+            <a href="#con">
+                <li>Contato</li>
+            </a>
+        </ul>
+        <h1>Agência de Turismo</h1>
+    </header>
+    <main>
+        <h2>Destinos</h2>
+        <div class="container">
+            <img src="imagens/Foto01.jpg" alt="Ponto Turistico" class="fotos">
+            <img src="imagens/Foto02.jpg" alt="Ponto Turistico" class="fotos">
+            <img src="imagens/Foto03.jpg" alt="Ponto Turistico" class="fotos">
+            <img src="imagens/Foto04.jpg" alt="Ponto Turistico" class="fotos">
+            <img src="imagens/Foto05.jpg" alt="Ponto Turistico" class="fotos">
+            <img src="imagens/Foto06.jpg" alt="Ponto Turistico" class="fotos">
+            <img src="imagens/Foto07.jpg" alt="Ponto Turistico" class="fotos">
+            <img src="imagens/Foto08.jpg" alt="Ponto Turistico" class="fotos">
+        </div>
+        <h2>Lojas</h2>
+        <div class="container">
+            <div class="item_loja">
+                <img src="imagens/Loja01.jpg" alt="São Paulo">
+                <h3>São Paulo</h3>
+                <h4>Shopping S&M</h4>
+                <p>10:00h às 22:00h</p>
+            </div>
+            <div class="item_loja">
+                <img src="imagens/Loja02.jpg" alt="Santo André">
+                <h3>Santo André</h3>
+                <h4>Central Mall</h4>
+                <p>09:00h às 18:00h</p>
+            </div>
+            <div class="item_loja">
+                <img src="imagens/Loja03.jpg" alt="Santos">
+                <h3>Santos</h3>
+                <h4>Centro de Eventos</h4>
+                <p>10:00h às 20:00h</p>
+            </div>
+        </div>
+
+        <h2 id="bus">Buscar</h2>
+        <form action="" method="get">
+            Destino <input type="text" name="dest" id="dest" maxlength="40" required>
+            Quantidade de Dias <input type="number" name="qtd" id="qtd" min="1" maxlength="60" required>
+            <input type="button" value="Buscar">
+        </form>
+        <h2 id="con">Contato</h2>
+        <form action="" method="get">
+            <p>Deixe seus dados e entraremos em contato:</p>
+            <input type="text" name="nome" id="nome" maxlength="38" required placeholder="Nome">
+            <input type="email" name="email" id="email" maxlength="38" required placeholder="E-mail">
+            <input type="text" name="fone" id="fone" maxlength="17" required placeholder="Telefone">
+            <input type="button" class="botao" value="Enviar">
+        </form>
+
+    </main>
+
+</body>
+
+</html>
