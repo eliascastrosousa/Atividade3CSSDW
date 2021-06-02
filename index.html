@@ -16,34 +16,26 @@
 <body>
     <header>
         <ul>
-            <a href="#top">
-                <li>Home</li>
-            </a>
-            <a href="#loj">
-                <li>Lojas</li>
-            </a>
-            <a href="#bus">
-                <li>Buscar</li>
-            </a>
-            <a href="#con">
-                <li>Contato</li>
-            </a>
+            <li><a href="#top">Home</a></li>
+            <li><a href="#loj">Lojas</a></li>
+            <li><a href="#bus">Buscar</a></li>
+            <li><a href="#con">Contato</a></li>
         </ul>
         <h1>Agência de Turismo</h1>
     </header>
     <main>
         <h2>Destinos</h2>
         <div class="container">
-            <img src="imagens/Foto01.jpg" alt="Ponto Turistico" class="fotos">
-            <img src="imagens/Foto02.jpg" alt="Ponto Turistico" class="fotos">
-            <img src="imagens/Foto03.jpg" alt="Ponto Turistico" class="fotos">
-            <img src="imagens/Foto04.jpg" alt="Ponto Turistico" class="fotos">
-            <img src="imagens/Foto05.jpg" alt="Ponto Turistico" class="fotos">
-            <img src="imagens/Foto06.jpg" alt="Ponto Turistico" class="fotos">
-            <img src="imagens/Foto07.jpg" alt="Ponto Turistico" class="fotos">
-            <img src="imagens/Foto08.jpg" alt="Ponto Turistico" class="fotos">
+            <img src="imagens/Foto01.jpg" class="fotos" alt="Ponto Turistico">
+            <img src="imagens/Foto02.jpg" class="fotos" alt="Ponto Turistico">
+            <img src="imagens/Foto03.jpg" class="fotos" alt="Ponto Turistico">
+            <img src="imagens/Foto04.jpg" class="fotos" alt="Ponto Turistico">
+            <img src="imagens/Foto05.jpg" class="fotos" alt="Ponto Turistico">
+            <img src="imagens/Foto06.jpg" class="fotos" alt="Ponto Turistico">
+            <img src="imagens/Foto07.jpg" class="fotos" alt="Ponto Turistico">
+            <img src="imagens/Foto08.jpg" class="fotos" alt="Ponto Turistico">
         </div>
-        <h2>Lojas</h2>
+        <h2 id="loj">Lojas</h2>
         <div class="container">
             <div class="item_loja">
                 <img src="imagens/Loja01.jpg" alt="São Paulo">
@@ -51,12 +43,14 @@
                 <h4>Shopping S&M</h4>
                 <p>10:00h às 22:00h</p>
             </div>
+
             <div class="item_loja">
                 <img src="imagens/Loja02.jpg" alt="Santo André">
                 <h3>Santo André</h3>
                 <h4>Central Mall</h4>
                 <p>09:00h às 18:00h</p>
             </div>
+
             <div class="item_loja">
                 <img src="imagens/Loja03.jpg" alt="Santos">
                 <h3>Santos</h3>
@@ -66,13 +60,17 @@
         </div>
 
         <h2 id="bus">Buscar</h2>
-        <form action="" method="get">
-            Destino <input type="text" name="dest" id="dest" maxlength="40" required>
-            Quantidade de Dias <input type="number" name="qtd" id="qtd" min="1" maxlength="60" required>
-            <input type="button" value="Buscar">
+        <form method="get">
+            <label for="destino">Destino</label> 
+            <input type="text" name="dest" id="dest" maxlength="40" required/>
+            <label for="qtd">Quantidade de Dias</label>
+            <input type="number" name="qtd" id="qtd" min="1" maxlength="60" required>
+
+            <input type="button" value="Buscar" class="botao">
         </form>
+
         <h2 id="con">Contato</h2>
-        <form action="" method="get">
+        <form method="get">
             <p>Deixe seus dados e entraremos em contato:</p>
             <input type="text" name="nome" id="nome" maxlength="38" required placeholder="Nome">
             <input type="email" name="email" id="email" maxlength="38" required placeholder="E-mail">
