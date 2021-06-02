@@ -99,9 +99,9 @@ label , #qtd, #dest, .botao {
     font-size: 1.25rem;
     padding: 5px;
     border-radius: 4px;
-    width: 100px;
+    width: 100%;
 }  
-#qtd, #dest, .botao {
+#qtd , #dest , .botao {
     font-family: inherit;
     text-align: center;
     border: none;
@@ -123,15 +123,15 @@ label, .botao {
     margin-bottom: 20px;    
 }
 #nome {
-    background-image: url("user_peq.png");
+    background-image: url("../imagens/user_peq.png");
 }
 #email {
-    background-image: url("correio_peq.png");
+    background-image: url("../imagens/correio_peq.png");
 }
 #fone {
-    background-image: url("phone_peq.png");
+    background-image: url("../imagens/phone_peq.png");
 }
-form > p {
+form p {
     font-weight: normal;
 }
 img {

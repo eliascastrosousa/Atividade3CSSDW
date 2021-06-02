@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo/style.css">
-    <title>Festivais</title>
+    <title>Agência de Turismo</title>
     <link rel="icon" href="imagens/mala.png">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
@@ -61,12 +61,13 @@
 
         <h2 id="bus">Buscar</h2>
         <form method="get">
-            <label for="destino">Destino</label> 
+            <label for="dest">Destino</label> 
             <input type="text" name="dest" id="dest" maxlength="40" required/>
-            <label for="qtd">Quantidade de Dias</label>
-            <input type="number" name="qtd" id="qtd" min="1" maxlength="60" required>
 
-            <input type="button" value="Buscar" class="botao">
+            <label for="qtd">Quantidade de Dias</label>
+            <input type="number" name="qtd" id="qtd" min="1" max="60" required/>
+
+            <input type="submit" value="Buscar" class="botao">
         </form>
 
         <h2 id="con">Contato</h2>
